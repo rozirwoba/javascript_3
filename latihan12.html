@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaScript 3 - Rozir Wobari</title>
+</head>
+<style>
+    table {
+        background-color: rgb(0, 0, 0);
+        width: 50%;
+        border: 1px solid;
+        text-align: center;
+        margin: auto;
+        border-collapse: collapse;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    th {
+        background-color: #f8f9fa;
+        color: #212529;
+        font-weight: bold;
+        padding: 10px;
+        text-align: center;
+    }
+    tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    td {
+        padding: 10px;
+    }
+    tr:hover {
+        background-color: #e9ecef;
+    }
+
+    #hasil {
+        padding-top: 40px;
+    }
+</style>
+<body>
+    <form id="frm">
+        <table>
+            <tr>
+                <th colspan="2" style="background-color: #cccccc;"><h3>Form Input</h3></th>
+            </tr>
+            <tr>
+                <td><label for="">Nama</label></td>
+                <td><input type="text" name="nama" id="" placeholder="Masukan Nama Anda"></td>
+            </tr>
+            <tr>
+                <td><label for="">Pekerjaan</label></td>
+                <td><input type="text" name="pekerjaan" id="" placeholder="Masukan Pekerjaan Anda"></td>
+            </tr>
+            <tr>
+                <td><label for="">Hobi</label></td>
+                <td><input type="text" name="hobi" id="" placeholder="Masukan Hobi Anda"></td>
+            </tr>
+            <tr>
+                <th colspan="2"><button type="button" onclick="dataPersonal()">Submit</button></th>
+            </tr>
+        </table>
+    </form>
+    <center id="hasil">
+    </center>
+</body>
+<script src="js/script.js"></script>
+</html>
